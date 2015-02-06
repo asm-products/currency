@@ -1,0 +1,13 @@
+{% set content %}
+
+    <h1>Currency Dashboard</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta blandit porta. Aenean faucibus, neque ut accumsan porttitor, augue elit congue risus, nec pretium lorem urna quis turpis. Ut eu tristique mi. Phasellus pharetra ornare semper. Fusce tincidunt felis lectus, in tincidunt tortor lobortis non.</p>
+
+{% endset %}
+
+{% extends '_layouts/cp' %}
+{% set title = "Currency Dashboard" %}
+{% set selectedTab = 'dashboard' %}
+{% set tabs = {
+    dashboard:     { label: "Dashboard"|t, url: url('bank/') },
+} %}
